@@ -24,7 +24,7 @@ public class Estudante {
 
     public int obterIdade(Date hoje) {
         int idade = 0;
-        //Lógic para calcular idade.
+        //Lógica para calcular idade.
         return idade;
     }
 
