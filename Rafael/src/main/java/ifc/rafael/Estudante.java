@@ -10,31 +10,73 @@ import java.util.Date;
  * @author aluno
  */
 public class Estudante {
-    
-    private String nome;
+
+    private String nomeCompleto;
     private Date dataNascimento;
     private String cpf;
     private char genero;
+    private String enderecoEletronico;
+    private double telefoneContato;
+    private int anoIngresso;
+    private int semestreIngresso;
+    private String situacaoAcademica;
+    private String ensinoMedioIntegrado;
     private String matricula;
     private String email;
+    private String graduacao;
+    private String posGraduacao;
 
     public Estudante() {
-        this.nome = "Nobody";
+        this.nomeCompleto = "Nobody";
     }
 
-    public int obterIdade(Date hoje) {
-        int idade = 0;
-        //Lógica para calcular idade.
-        return idade;
+    // GERAR MATRÍCULA (ano + semestre + 5 dígitos)
+    public void gerarMatricula() {
+        this.matricula = anoIngresso + "" + semestreIngresso;
     }
 
+// GETTERS E SETTERS
     public String getNome() {
-        return this.nome;
+        return this.nomeCompleto;
     }
 
-    public void setNome(String _nome) {
-        this.nome = _nome;
+    public void setNome(String nome) {
+        this.nomeCompleto = nome;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public int getAnoIngresso() {
+        return anoIngresso;
+    }
+
+    public void setAnoIngresso(int anoIngresso) {
+        this.anoIngresso = anoIngresso;
+    }
+
+    public int getSemestreIngresso() {
+        return semestreIngresso;
+    }
+
+    public void setSemestreIngresso(int semestreIngresso) {
+        this.semestreIngresso = semestreIngresso;
+    }
+
+    public String getMatricula() {
+        return matricula;
+    }
+
+    public String getSituacaoAcademica() {
+        return situacaoAcademica;
+    }
+
+    public void setSituacaoAcademica(String situacaoAcademica) {
+        this.situacaoAcademica = situacaoAcademica;
     }
 }
-
-
